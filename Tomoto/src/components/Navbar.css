@@ -1,0 +1,119 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+.navbar .logo{
+   width: 150px;
+   height: 40px;
+}
+.navbar-menu{
+    display: flex;
+    gap:20px;
+    list-style: none;
+    font-size: 18px;
+    color: #49557e;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border:1px solid tomato
+}
+.navbar button:hover{
+    background-color: #f5f5f5df;
+}
+
+.navbar .active{
+    border-bottom: 3px solid ;
+    padding-bottom: 2px;
+}
+
+.navbar ul li{
+    cursor: pointer;
+}
+.navbar-search-icon{
+    position: relative;
+}
+.navbar-search-icon .dot{
+    background-color:tomato;
+    position: absolute;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 10px;
+    top: -15px;
+    right:-12px;
+    color: white;
+    text-align: center;
+}
+.navbar-right .user-info{
+     width:50px;
+     mix-blend-mode: screen;
+     border-radius: 25px;
+     
+}
+.navbar-right .Logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.navbar-right .Logout .logout{
+    background-color: tomato;
+    color: white;
+    border: none;
+}
+
+@media (max-width:1050px) {
+    .navbar .logo{
+        width: 140px;
+    }
+   .navbar-menu{
+    gap:20px;
+    font-size: 17px;
+   }
+   .navbar-right{
+    gap:30px;
+   }
+   .navbar-right img{
+    width: 22px;
+   }
+   .navbar-right button{
+    padding: 8px 25px;
+   }
+}
+@media (max-width:900px) {
+    .navbar .logo{
+        width: 120px;
+    }
+   .navbar-menu{
+    gap:15px;
+    font-size: 16px;
+   }
+   .navbar-right{
+    gap:20px;
+   }
+   .navbar-right img{
+    width: 20px;
+   }
+   .navbar-right button{
+    padding: 7px 20px;
+    font-size: 15px;
+   }
+}
+@media (max-width:750px) {
+    
+   .navbar-menu{
+   display: none;
+   }
+   
+}
