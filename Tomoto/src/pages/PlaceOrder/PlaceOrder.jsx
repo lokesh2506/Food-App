@@ -45,7 +45,7 @@ const navigate=useNavigate();
                          <b>{getTotalCartAmount()+2}</b>
                     </div>
                     <hr />
-                 <button ><Link to='/payment'>PROCEED TO PAYMENT</Link></button>
+                 <button onClick={()=>navigate('/payment')}>PROCEED TO PAYMENT</button>
                 </div>
             </div>
         </div>

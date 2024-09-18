@@ -84,7 +84,7 @@ const Cart = ({setShowLogin}) => {
                         </div>
                         <hr />
                     </div>
-                    {getTotalCartAmount()>0 ? <button onClick={()=>{LoginProfile ? Navigate('/payment') : setShowLogin(true) }}>PROCEED TO CHECKOUT</button>:<></>}
+                    {getTotalCartAmount()>0 ? <button onClick={()=>{LoginProfile ? Navigate('/order') : setShowLogin(true) }}>PROCEED TO CHECKOUT</button>:<></>}
                 </div>
                 <div className="cart-promocode">
                     <div>
